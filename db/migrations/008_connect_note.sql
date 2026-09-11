@@ -1,0 +1,1 @@
+ALTER TABLE touch ADD COLUMN IF NOT EXISTS connect_note TEXT;

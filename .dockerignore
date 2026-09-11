@@ -1,0 +1,11 @@
+.git
+.env*
+.local
+.context
+**/node_modules
+**/build
+**/.svelte-kit
+**/*.log
+**/*.dump
+out
+report/out

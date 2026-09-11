@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "id": "synthetic-comment",
+      "date": "2026-01-01T00:00:00Z",
+      "author": "Example Person",
+      "author_details": {
+        "id": "ACoAAsynthetic000000000000000000000000009",
+        "public_identifier": "sample-person",
+        "profile_url": "https://www.linkedin.com/in/sample-person",
+        "headline": "Fictional role"
+      },
+      "text": "This is a fictional comment for a parser test."
+    }
+  ],
+  "cursor": null
+}

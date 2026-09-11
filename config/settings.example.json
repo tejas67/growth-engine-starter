@@ -1,0 +1,16 @@
+{
+  "business": {
+    "name": "",
+    "senderName": "",
+    "website": "",
+    "description": "What your business does",
+    "offer": "One useful, concrete thing you can offer a prospect",
+    "audience": "Who benefits, their role, company type, geography, and relevant needs",
+    "excludedCompanies": [],
+    "writingStyle": "Short, specific, and conversational. Be useful. Do not invent interest or familiarity.",
+    "proof": "Only facts, customers, and results you can substantiate",
+    "bannedPhrases": []
+  },
+  "ai": { "provider": "demo", "model": "", "fallback": "none", "fallbackModel": "", "compatibleBaseUrl": "http://127.0.0.1:11434/v1" },
+  "integrations": { "discoveryEnabled": false, "unipileDsn": "", "unipileAccountId": "", "verificationEnabled": false, "enrichmentEnabled": false, "heyreachCampaignId": "", "heyreachAccountId": "" }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "growth-engine-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A local growth workspace with configurable business targeting, AI drafting, review, and LinkedIn campaign handoff.",
+  "engines": {
+    "node": "^22.12 || >=24"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "migrate": "tsx db/migrate.ts up",
+    "migrate:status": "tsx db/migrate.ts status",
+    "seeds:load": "tsx src/seeds/load_seed_accounts.ts",
+    "holds:release": "tsx src/cli/holds_release.ts",
+    "drafts:relint": "tsx src/cli/relint_drafts.ts",
+    "drafts:refresh": "tsx src/cli/refresh_drafts.ts",
+    "notes:backfill": "tsx src/cli/backfill_notes.ts",
+    "pipeline:scrape": "tsx src/cli/run_stage.ts scrape",
+    "pipeline:score": "tsx src/cli/run_stage.ts score",
+    "pipeline:verify": "tsx src/cli/run_stage.ts verify",
+    "pipeline:enrich": "tsx src/cli/run_stage.ts enrich",
+    "pipeline:draft": "tsx src/cli/run_stage.ts draft",
+    "pipeline:send": "tsx src/cli/run_stage.ts send",
+    "pipeline:ingest": "tsx src/cli/run_stage.ts ingest",
+    "pipeline:resolve": "tsx src/cli/run_stage.ts resolve",
+    "digest": "tsx src/cli/digest.ts",
+    "analyst:weekly": "tsx src/cli/analyst_weekly.ts",
+    "doctor": "tsx src/cli/doctor.ts",
+    "worker": "tsx src/queue/worker.ts",
+    "dashboard:dev": "npm --prefix dashboard run dev",
+    "dashboard:check": "npm --prefix dashboard run check",
+    "dashboard:build": "npm --prefix dashboard run build",
+    "dashboard:test": "npm --prefix dashboard run test",
+    "setup": "node scripts/setup.mjs",
+    "start": "node scripts/start.mjs",
+    "check": "npm run typecheck && npm run test && npm run dashboard:check && npm run dashboard:test && npm run dashboard:build",
+    "export": "node scripts/export.mjs",
+    "test:integration": "node scripts/test-db.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "imapflow": "^2.0.2",
+    "mailparser": "^3.9.24",
+    "pg": "^8.12.0",
+    "pg-boss": "^10.1.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^22.20.2",
+    "@types/pg": "^8.11.6",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^4.1.11"
+  }
+}

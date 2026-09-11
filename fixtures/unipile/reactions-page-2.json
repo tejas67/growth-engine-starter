@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "value": "LIKE",
+      "author": {
+        "id": "ACoAAsynthetic000000000000000000000000003",
+        "type": "USER",
+        "name": "Example Person 3",
+        "headline": "Fictional role",
+        "profile_url": "https://www.linkedin.com/in/sample-person-3"
+      }
+    },
+    {
+      "value": "LIKE",
+      "author": {
+        "id": "ACoAAsynthetic000000000000000000000000004",
+        "type": "USER",
+        "name": "Example Person 4",
+        "headline": "Fictional role",
+        "profile_url": "https://www.linkedin.com/in/sample-person-4"
+      }
+    }
+  ],
+  "cursor": null
+}

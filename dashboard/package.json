@@ -1,0 +1,40 @@
+{
+  "name": "growth-engine-starter-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Configure, review, and run your own growth workflow",
+  "engines": {
+    "node": "^22.12 || >=24"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node build/index.js",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "5.3.0",
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^5.5.7",
+    "@sveltejs/kit": "^2.70.3",
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "@types/node": "^22",
+    "@types/pg": "^8.11.6",
+    "svelte": "^5.57.0",
+    "svelte-check": "^4.7.6",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vite": "^8.3.0",
+    "vitest": "^4.1.11"
+  },
+  "overrides": {
+    "cookie": "^0.7.2"
+  }
+}

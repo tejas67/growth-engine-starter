@@ -1,0 +1,14 @@
+{
+  "method": "explicit tracked source allowlist; new Git history",
+  "excluded": [
+    "git history",
+    "environment files",
+    "live fixtures",
+    "seed lists",
+    "reports",
+    "database data",
+    "cloud deployment configuration",
+    "local AI auth",
+    "brand assets"
+  ]
+}

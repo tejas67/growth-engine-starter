@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "id": "synthetic-account",
+      "type": "LINKEDIN",
+      "name": "Sample Owner",
+      "sources": [
+        {
+          "status": "OK"
+        }
+      ]
+    }
+  ],
+  "cursor": null
+}
